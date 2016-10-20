@@ -1,0 +1,52 @@
+tests:
+  - title: This is the title of the first test.
+    prerequisites: These are the prerequisites for the first test.
+    action: These are the actions of the first test.
+    actionBy: This is who will perform the test.
+    additionalResources: These are the required additional resources.
+    additionalActions: These are the additonal actions taken by additional resources.
+    expectedOutcome: This is the expected outcome of the test.
+    measurement: These are the test measurements.
+    dateTime: This is the date and time of the test in ISO 8601 format.
+    actualOutcome: Thi is the acutal outcome of the test.
+    passFail: Pass or Fail.
+    remediation: Steps to remediate.
+
+  - title: This is the title of the second test.
+    prerequisites: These are the prerequisites for the second test.
+    action: These are the actions of the second test.
+    actionBy: This is who will perform the test.
+    additionalResources: These are the required additional resources.
+    additionalActions: These are the additonal actions taken by additional resources.
+    expectedOutcome: This is the expected outcome of the test.
+    measurement: These are the test measurements.
+    dateTime: This is the date and time of the test in ISO 8601 format.
+    actualOutcome: Thi is the acutal outcome of the test.
+    passFail: Pass or Fail.
+    remediation: Steps to remediate.
+
+  - title: This is the title of the third test.
+    prerequisites: These are the prerequisites for the third test.
+    action: These are the actions of the third test.
+    actionBy: This is who will perform the test.
+    additionalResources: These are the required additional resources.
+    additionalActions: These are the additonal actions taken by additional resources.
+    expectedOutcome: This is the expected outcome of the test.
+    measurement: These are the test measurements.
+    dateTime: This is the date and time of the test in ISO 8601 format.
+    actualOutcome: Thi is the acutal outcome of the test.
+    passFail: Pass or Fail.
+    remediation: Steps to remediate.
+
+  - title: This is the title of the fourth test.
+    prerequisites: These are the prerequisites for the fourth test.
+    action: These are the actions of the fourth test.
+    actionBy: This is who will perform the test.
+    additionalResources: These are the required additional resources.
+    additionalActions: These are the additonal actions taken by additional resources.
+    expectedOutcome: This is the expected outcome of the test.
+    measurement: These are the test measurements.
+    dateTime: This is the date and time of the test in ISO 8601 format.
+    actualOutcome: Thi is the acutal outcome of the test.
+    passFail: Pass or Fail.
+    remediation: Steps to remediate.

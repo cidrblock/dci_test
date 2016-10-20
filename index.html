@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/js-yaml/3.6.1/js-yaml.js"></script>
+    <script src="http://code.jquery.com/jquery-1.12.3.js"></script>
+    <script src="http://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+    <script>
+      jQuery.get('tests.yaml', function(data) {
+        var array = []
+        var obj = jsyaml.load(data);
+        for (value in obj.tests){
+          var entry = obj.tests[value]
+          tempArray = [ parseInt(value) + 1,
+            entry.title,
+            entry.prerequisites,
+            entry.action,
+            entry.actionBy,
+            entry.additionalResources,
+            entry.additionalActions,
+            entry.expectedOutcome,
+            entry.measurement,
+            entry.dateTime,
+            entry.actualOutcome,
+            entry.passFail,
+            entry.remediation
+
+            ]
+          array.push(tempArray)
+        }
+        $('#example').DataTable( {
+              data: array,
+              columns: [
+                  { title: "ID" },
+                  { title: "Title" },
+                  { title: "Prerequisites" },
+                  { title: "Action" },
+                  { title: "Action By" },
+                  { title: "Additional Resource" },
+                  { title: "Additional Actions" },
+                  { title: "Expected Outcome" },
+                  { title: "Measurement" },
+                  { title: "Date/Time" },
+                  { title: "Actual Outcome" },
+                  { title: "Pass Fail" },
+                  { title: "Remediation" }
+              ]
+          } );
+      });
+    </script>
+  </head>
+  <body>
+    <style>
+    * {
+    font-family: Verdana, Arial, 'sans-serif';
+    font-size: .95em;
+    }
+    </style>
+    <table id="example" class="display" width="100%"></table>
+  </body>
+</html>
